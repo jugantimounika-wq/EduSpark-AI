@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,8 +7,17 @@
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="EduSpark AI- Discover collaborators, build teams, organize events, plan projects, and grow your skills with intelligent AI tools. Create Together. Grow Together." />
-  <title>EduSpark AI</title>
+    content="EduSpark AI - Next-generation AI-powered collaborative platform for creators, builders, and students. Discover partners, organize hackathons, manage project sprints, and innovate with AI." />
+  <meta name="theme-color" content="#4f46e5" />
+
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https:; base-uri 'self'; form-action 'self';" />
+
+  <title>EduSpark AI - Creative Community Club</title>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -18,6 +27,15 @@
 
 <body
   class="bg-slate-50 text-slate-900 dark:bg-[#0b0f19] dark:text-slate-100 min-h-screen antialiased selection:bg-indigo-500 selection:text-white transition-colors duration-200">
+  <!-- Accessibility: Skip to Main Content Link for Keyboard and Screen Reader Users -->
+  <a href="#main-content"
+    class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-indigo-600 focus:text-white focus:rounded-lg focus:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-400">
+    Skip to main content
+  </a>
+
+  <!-- Global Accessibility Screen Reader Live Announcer -->
+  <div id="a11y-announcer" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
